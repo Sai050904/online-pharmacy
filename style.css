@@ -1,0 +1,84 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background:#f4f7fb;
+}
+
+header{
+    background:#1e88e5;
+    color:white;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    margin:10px;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.hero{
+    text-align:center;
+    padding:100px;
+}
+
+button{
+    padding:12px 25px;
+    background:#1e88e5;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:18px;
+}
+.form-box{
+    width:300px;
+    margin:100px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+}
+
+input{
+    width:90%;
+    padding:10px;
+    margin:10px;
+}
+.medicine-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    padding:30px;
+}
+
+.card{
+    width:220px;
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    border-radius:10px;
+}
+
+.card h3{
+    margin:10px 0;
+}
+
+.card p{
+    color:gray;
+}
+
+.card button{
+    margin-top:10px;
+}

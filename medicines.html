@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medicines</title>
+
+    <style>
+
+        body{
+            font-family:Arial;
+            background:#f4f7fb;
+            margin:0;
+        }
+
+        h1{
+            text-align:center;
+            padding:20px;
+            color:#1e88e5;
+        }
+
+        .medicine-container{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:25px;
+            padding:30px;
+        }
+
+        .card{
+            width:220px;
+            background:white;
+            border-radius:15px;
+            padding:20px;
+            text-align:center;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .card img{
+            width:100%;
+            height:180px;
+            object-fit:cover;
+            border-radius:10px;
+        }
+
+        button{
+            background:#1e88e5;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>Available Medicines</h1>
+
+<div class="medicine-container">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400">
+<h3>Paracetamol</h3>
+<h4>₹50</h4>
+<button onclick="addToCart('Paracetamol',50)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=400">
+<h3>Cough Syrup</h3>
+<h4>₹120</h4>
+<button onclick="addToCart('Cough Syrup',120)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=400">
+<h3>Vitamin C</h3>
+<h4>₹80</h4>
+<button onclick="addToCart('Vitamin C',80)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400">
+<h3>Betadine</h3>
+<h4>₹95</h4>
+<button onclick="addToCart('Betadine',95)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1584362917165-526a968579e8?w=400">
+<h3>Otrivin</h3>
+<h4>₹145</h4>
+<button onclick="addToCart('Otrivin',145)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1573883431205-98b5f10aaedb?w=400">
+<h3>Cetirizine</h3>
+<h4>₹60</h4>
+<button onclick="addToCart('Cetirizine',60)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1580281657527-47d2d2d8a1c4?w=400">
+<h3>Insulin</h3>
+<h4>₹350</h4>
+<button onclick="addToCart('Insulin',350)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1628771065518-0d82f1938462?w=400">
+<h3>Digene</h3>
+<h4>₹90</h4>
+<button onclick="addToCart('Digene',90)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400">
+<h3>Dolo 650</h3>
+<h4>₹40</h4>
+<button onclick="addToCart('Dolo 650',40)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?w=400">
+<h3>ORS Powder</h3>
+<h4>₹25</h4>
+<button onclick="addToCart('ORS Powder',25)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1585435557343-3b092031d4f7?w=400">
+<h3>Azithromycin</h3>
+<h4>₹180</h4>
+<button onclick="addToCart('Azithromycin',180)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=400">
+<h3>Volini Spray</h3>
+<h4>₹220</h4>
+<button onclick="addToCart('Volini Spray',220)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=400">
+<h3>Calcium Tablets</h3>
+<h4>₹140</h4>
+<button onclick="addToCart('Calcium Tablets',140)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1628595351029-c2bf17511435?w=400">
+<h3>Liv 52</h3>
+<h4>₹160</h4>
+<button onclick="addToCart('Liv 52',160)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550572017-edd951b55104?w=400">
+<h3>Combiflam</h3>
+<h4>₹55</h4>
+<button onclick="addToCart('Combiflam',55)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600959907703-125ba1374a12?w=400">
+<h3>Pantoprazole</h3>
+<h4>₹110</h4>
+<button onclick="addToCart('Pantoprazole',110)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400">
+<h3>Ibuprofen</h3>
+<h4>₹70</h4>
+<button onclick="addToCart('Ibuprofen',70)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400">
+<h3>Zincovit</h3>
+<h4>₹130</h4>
+<button onclick="addToCart('Zincovit',130)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581594549595-35f6edc7b762?w=400">
+<h3>Disprin</h3>
+<h4>₹35</h4>
+<button onclick="addToCart('Disprin',35)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400">
+<h3>Amoxicillin</h3>
+<h4>₹150</h4>
+<button onclick="addToCart('Amoxicillin',150)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=400">
+<h3>Benadryl</h3>
+<h4>₹125</h4>
+<button onclick="addToCart('Benadryl',125)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=400">
+<h3>Crocin</h3>
+<h4>₹45</h4>
+<button onclick="addToCart('Crocin',45)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=400">
+<h3>Revital</h3>
+<h4>₹180</h4>
+<button onclick="addToCart('Revital',180)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=400">
+<h3>Moov Spray</h3>
+<h4>₹210</h4>
+<button onclick="addToCart('Moov Spray',210)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1580281657527-47d2d2d8a1c4?w=400">
+<h3>Glucon-D</h3>
+<h4>₹90</h4>
+<button onclick="addToCart('Glucon-D',90)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550572017-edd951b55104?w=400">
+<h3>Gelusil</h3>
+<h4>₹65</h4>
+<button onclick="addToCart('Gelusil',65)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600959907703-125ba1374a12?w=400">
+<h3>Omeprazole</h3>
+<h4>₹95</h4>
+<button onclick="addToCart('Omeprazole',95)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581594549595-35f6edc7b762?w=400">
+<h3>Sinarest</h3>
+<h4>₹75</h4>
+<button onclick="addToCart('Sinarest',75)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400">
+<h3>Shelcal</h3>
+<h4>₹155</h4>
+<button onclick="addToCart('Shelcal',155)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400">
+<h3>Vicks Vaporub</h3>
+<h4>₹85</h4>
+<button onclick="addToCart('Vicks Vaporub',85)">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?w=400">
+<h3>Electral</h3>
+<h4>₹30</h4>
+<button onclick="addToCart('Electral',30)">Add to Cart</button>
+</div>  
+
+</div>
+
+<script>
+
+function addToCart(name,price)
+{
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    cart.push({
+        name:name,
+        price:price
+    });
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    alert(name + " added to cart");
+
+    window.location.href="cart.html";
+}
+
+</script>
+
+</body>
+</html>
